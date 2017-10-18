@@ -20,12 +20,16 @@ InitializeComponent();
             nums.Add(5);
             nums.Add(3);
             foreach (int i in nums)
-                richTextBox1.AppendText(i + ",");
-            richTextBox1.AppendText("\n================\n");
+                richTextBox2.AppendText(i + ",");
+            richTextBox2.AppendText("\n================\n");
             nums.Remove(3);
             foreach (int i in nums)
-                richTextBox1.AppendText(i + ",");
+                richTextBox2.AppendText(i + ",");
         }
-       
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
